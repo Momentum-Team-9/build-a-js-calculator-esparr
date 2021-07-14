@@ -23,26 +23,26 @@ body {
 }
 
 .red {
-    background-color: red;
+    background-color: teal;
 }
 
 .blue { 
-    background-color: blue;
+    background-color: teal;
 }
 
 .orange {
-    background-color: orange;
+    background-color: lightseagreen;
 }
 
 .green {
-    background-color: green;
+    background-color: teal;
 }
 
 #display {
     color: white;
     height: 50px;
     width: 150px;
-    background-color: purple;
+    background-color: lightseagreen;
     display: flex;
     align-items: center;
     justify-content: center;

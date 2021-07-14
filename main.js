@@ -81,7 +81,7 @@ minus.addEventListener('click', function (event) {
 const multi = document.getElementById('multi')
 console.log(multi)
 multi.addEventListener('click', function (event) {
-    display.innerText += event.target.innerText
+    display.innerText += "*"
 })
 
 const decimal = document.getElementById('decimal')
@@ -90,20 +90,28 @@ decimal.addEventListener('click', function (event) {
     display.innerText += event.target.innerText
 })
 
-//
-const equal = document.getElementById('equal')
-let total = 0
-console.log(equal)
-equal.addEventListener('click', function (event) {
-    const parser = math.parser()
-    parser.evaluate('f = typed({"number": f(x) = x ^ 2 - 5})')
-    math.evaluate('display.innerText')
-    display.innerText = event.total.innerText
-})
-
 // Clears display
 const clear = document.getElementById('clear')
 console.log(clear)
 clear.addEventListener('click', function (event) {
     display.innerText = []
 })
+
+// Does the math
+const equal = document.getElementById('equal')
+console.log(equal)
+equal.addEventListener('click', function (event) {
+    display.innerText = eval(display.innerText)
+})
+
+
+
+//Changing string to number
+// parseInt(event.innerText)
+
+// How to evaluate expressions
+// eval(parameters)
+
+ // if (decimal === ".") {
+    //     decimal === "0.")
+    // }
